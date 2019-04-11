@@ -4,3 +4,4 @@ user_valid:
   min_length_password: 6
 user_helper:
   size_gravater: 80
+checkbox: "1"
