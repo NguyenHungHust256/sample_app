@@ -86,6 +86,22 @@ en:
       fail_ac: "Create account don't success"
     show:
       error: "Don't find user"
+    edit:
+      title: "Edit user"
+      button_text: "Save changes"
+      name_page: "Update your profile"
+      change: "Change"
+    update:
+      success: "Profile updated"
+    logged_in_user:
+      unsuccess: "Please login"
+    index:
+      title: "All users"
+      sure: "You sure?"
+    destroy:
+      success: "User deleted"
+      unsuccess: "User did not delete"
+      delete: "Delete"
   layouts:
     application:
       page_title: "Ruby on Rails Tutorial Sample App"
