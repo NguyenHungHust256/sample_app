@@ -53,6 +53,22 @@ vi:
       fail_ac: "Tạo tài khoản không thành công"
     show:
       error: "Không tìm thấy người dùng"
+    edit:
+      title: "Thay đổi thông tin người dùng"
+      button_text: "Lưu lại thay đổi"
+      name_page: "Cập nhật hồ sơ của bạn"
+      change: "Thay đổi"
+    update:
+      success: "Đã cập nhật hồ sơ"
+    logged_in_user:
+      unsuccess: "Please login"
+    index:
+      title: "Tất cả người dùng"
+      sure: "Bạn có chắc chắn không?"
+    destroy:
+      success: "Người dùng đã được xóa"
+      unsuccess: "Xóa người dùng không thành công"
+      delete: "Xóa"
   layouts:
     application:
       page_title: " Sản phẩm mẫu của Ruby On Rails"

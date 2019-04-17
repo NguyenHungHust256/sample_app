@@ -5,11 +5,12 @@ class SessionsController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
 
     if user&.authenticate(params[:session][:password])
-      flash.now[:success] = t ".success"
       login_with_remember user
+      redirect_back_or user
+      flash.now[:success] = t("sessions.success")
     else
-      flash.now[:danger] = t ".error"
       render :new
+      flash.now[:danger] = t("sessions.error")
     end
   end
 
@@ -22,6 +23,5 @@ class SessionsController < ApplicationController
     log_in user
     remember_me = params[:session][:remember_me]
     remember_me == Settings.checkbox ? remember(user) : forget(user)
-    redirect_to user
   end
 end
