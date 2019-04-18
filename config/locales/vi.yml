@@ -51,6 +51,8 @@ vi:
       create: "Tạo tài khoản"
       success_ac: "Chào mừng bạn đến với Sample App!"
       fail_ac: "Tạo tài khoản không thành công"
+    create:
+      info: "Hãy kiểm tra email của bạn để kích hoạt tài khoản"
     show:
       error: "Không tìm thấy người dùng"
     edit:
@@ -69,6 +71,11 @@ vi:
       success: "Người dùng đã được xóa"
       unsuccess: "Xóa người dùng không thành công"
       delete: "Xóa"
+  mail:
+    content: "Chào mừng bạn đến với Sample App. Click button phía dưới để kích hoạt tài khoản:"
+    active: "Kích hoạt"
+    hi: "Xin chào"
+    account: "Kích hoạt email"
   layouts:
     application:
       page_title: " Sản phẩm mẫu của Ruby On Rails"
@@ -80,3 +87,4 @@ vi:
     error: "Email/password không so khớp"
     success: "Đăng nhập thành công"
     remember_me_html: "<span>Lưu lại trên máy tính này</span>"
+    message: "Tài khoản chưa hoạt động. Kiểm tra email của bạn để lấy link kích hoạt"
