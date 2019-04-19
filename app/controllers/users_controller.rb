@@ -16,10 +16,11 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t(".new.success_ac")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t(".create.info")
+      redirect_to root_url
     else
-      flash[:danger] = t(".new.fail_ac")
+      flash.now[:danger] = t(".new.fail_ac")
       render :new
     end
   end

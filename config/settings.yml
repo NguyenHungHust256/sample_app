@@ -4,5 +4,8 @@ user_valid:
   min_length_password: 6
 user_helper:
   size_gravater: 80
-  size_gravater_custom: 50
+  size_gravater_custom: 50git
 checkbox: "1"
+configure:
+  email:
+    owner: "noreply@example.com"

@@ -163,6 +163,7 @@ GEM
     parallel (1.16.2)
     parser (2.6.2.0)
       ast (~> 2.4.0)
+    pg (0.20.0)
     powerpack (0.1.2)
     public_suffix (3.0.3)
     puma (3.12.1)
@@ -288,6 +289,7 @@ DEPENDENCIES
   minitest
   minitest-reporters
   parser
+  pg (~> 0.20.0)
   puma (~> 3.11)
   rails (~> 5.2.2, >= 5.2.2.1)
   rails-controller-testing

@@ -84,6 +84,8 @@ en:
       create: "Create your account"
       success_ac: "Welcome to the Sample App!"
       fail_ac: "Create account don't success"
+    create:
+      info: "Please check your email to activate your account."
     show:
       error: "Don't find user"
     edit:
@@ -102,6 +104,25 @@ en:
       success: "User deleted"
       unsuccess: "User did not delete"
       delete: "Delete"
+    account_activate:
+      edit:
+        active: "Account activated!"
+        un_active: "Invalid activation link"
+  mail:
+    content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    active: "Active"
+    hi: "Hi"
+    account: "Account activation"
+    pass_reset: "Password reset"
+    passwd_reset:
+      to_reset: "To reset your password click the link below:"
+      expire: "This link will expire in two hours.
+                 If you did not request your password to be reset, please ignore this email and
+                 your password will stay as it is."
+      confirm: "Confirmation"
+      submit: "Update password"
+      empty_er: "can't be empty"
+      passw_reset: "Password has been reset."
   layouts:
     application:
       page_title: "Ruby on Rails Tutorial Sample App"
@@ -113,3 +134,10 @@ en:
     error: "Invalid email/password combination"
     success: "Login Successful"
     remember_me_html: "<span>Remember me on this computer</span>"
+    message: "Account not activated. Check your email for the activation link."
+    forgot: "(forgot password)"
+  password_reset:
+    title: "Forgot password"
+    create:
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
