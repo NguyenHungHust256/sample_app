@@ -26,7 +26,10 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate(page: params[:page], per_page: Settings.Post.num_post)
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
+    @microposts = @user.microposts.paginate(page: params[:page],
+      per_page: Settings.Post.num_post)
   end
 
   def edit; end
@@ -50,6 +53,13 @@ class UsersController < ApplicationController
     end
   end
 
+  private
+
+  def user_params
+    params.require(:user).permit :name, :email, :password,
+      :password_confirmation
+  end
+
   def find_user
     @user = User.find_by id: params[:id]
 
@@ -58,18 +68,18 @@ class UsersController < ApplicationController
     flash[:danger] = t ".error"
   end
 
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t ".logged_in_user.unsuccess"
+    redirect_to login_url
+  end
+
   def correct_user
-    redirect_to root_url unless current_user? @user
+    redirect_to root_url unless current_user.current_user? @user
   end
 
   def admin_user
     redirect_to root_url unless current_user.admin?
-  end
-
-  private
-
-  def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
   end
 end

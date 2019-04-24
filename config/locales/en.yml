@@ -109,6 +109,9 @@ en:
       edit:
         active: "Account activated!"
         un_active: "Invalid activation link"
+    show_follow:
+      view_my_profile: "view my profile"
+      micropost: "Microposts"
   mail:
     content: "Welcome to the Sample App! Click on the link below to activate your account:"
     active: "Active"
@@ -161,3 +164,18 @@ en:
       post: "Post"
     error:
       contain: "The form contains"
+  relationships:
+    stats:
+      following:
+        one: "1 Following"
+        other: "%{count} Following"
+      followers:
+        one: "1 Follower"
+        other: "%{count} Follower"
+    form:
+      follow:
+        submit: "Follow"
+      unfollow:
+        submit: "Unfollow"
+    following: "following"
+    follower: "follower"
