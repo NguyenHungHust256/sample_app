@@ -9,3 +9,10 @@ checkbox: "1"
 configure:
   email:
     owner: "noreply@example.com"
+Post:
+  num_post: 5
+  size_image: 5
+  resize_height: 400
+  resize_width: 400
+  content_size: 140
+  avatar_size: 50
