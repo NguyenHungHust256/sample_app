@@ -17,6 +17,8 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 
+  private
+
   def login_with_remember user
     log_in user
     remember_me = params[:session][:remember_me]

@@ -2,7 +2,8 @@ class Micropost < ApplicationRecord
   belongs_to :user
 
   validates :user, presence: true
-  validates :content, presence: true, length: {maximum: Settings.Post.content_size}
+  validates :content, presence: true,
+    length: {maximum: Settings.Post.content_size}
   validate  :picture_size
 
   scope :micropost_desc, ->{order created_at: :desc}
